@@ -88,7 +88,7 @@ export default function FilterTgl({scrollPosition}) {
                   <div key={Movie.id} className="col-3 my-4 d-flex justify-content-center">
                     <div className="card text-center shadowCard">
                       <div className="image-container">
-                        <LazyLoadImage onClick={() => handleDetailImg(Movie.image, Movie.title)} alt={Movie.title} width="260px" src={Movie.image} scrollPosition={scrollPosition} />
+                        <LazyLoadImage onClick={() => handleDetailImg(Movie.image, Movie.title)} alt={Movie.title} width="260px" src={Movie.image} scrollPosition={scrollPosition} style={{ cursor: 'pointer' }} />
                       </div>
                       <div className="card-body">
                         <h4 className="card-title titleCard">{Movie.title}</h4>
